@@ -2,7 +2,7 @@ pipeline {
     agent any 
     
     environment {
-        APP_NAME = "Godwin's bot"
+        APP_NAME = "godwins-bot"
         RELEASE = "1.0.0"
         DOCKER_USER = "godwinekele"
         IMAGE_NAME = "${DOCKER_USER}/${APP_NAME}"
@@ -18,7 +18,7 @@ pipeline {
         
         stage("Checkout from SCM") {
             steps {
-                git branch: 'main', credentialsId: 'github-cred', url: 'https://github.com/godwinekele/python-gold-bot.git'
+                git branch: 'main', credentialsId: 'github-cred', url: 'https://github.com/godwinekele/End_to-_End.git'
             }
         }
         
